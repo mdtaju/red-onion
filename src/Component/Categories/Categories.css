@@ -1,0 +1,26 @@
+section.categories_main_container {
+    margin-top: 100px;
+}
+div.categories_names_container {
+    width: 300px;
+    margin: 0px auto;
+    margin-bottom: 80px;
+}
+strong.category_style {
+    cursor: pointer;
+}
+div.categories_disable_container {
+    width: max-content;
+    margin: 0px auto;
+}
+button.categories_active_btn, button.categories_disabled_btn {
+    padding: 10px 40px;
+    background: var(--redColor);
+    border-radius: 7px;
+    color: white;
+    border: none;
+    outline: none !important;
+}
+button.categories_disabled_btn {
+    background: lightgray;
+}

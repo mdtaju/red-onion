@@ -1,0 +1,40 @@
+div.categories_child_item {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 10px 0px rgb(0, 0, 0, 50%);
+    border-radius: 10px;
+    height: 392px;
+    margin-bottom: 50px;
+}
+button.add_cart_container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border: 1px solid var(--redColor);
+    border-radius: 3px;
+    background: white;
+    outline: none !important;
+    cursor: pointer;
+}
+button.add_cart_container:hover svg path, button.add_cart_container:hover {
+    background: var(--redColor);
+    fill: white;
+}
+button.add_cart_container svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--redColor);
+}
+div.categories_child_img {
+    width: 200px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+div.categories_child_img img {
+    width: 100%;
+}
+.categories_child_name, .categories_child_name:hover {
+    color: #000;
+}

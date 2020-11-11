@@ -1,0 +1,35 @@
+div.aboutUs_main_title_aria {
+    width: 50%;
+    margin-top: 50px;
+}
+@media(max-width: 768px) {
+    div.aboutUs_main_title_aria {
+        width: 70%;
+    }
+}
+@media(max-width: 425px) {
+    div.aboutUs_main_title_aria {
+        width: 100%;
+    }
+}
+img.AboutUs_ChefImage {
+    width: 100%;
+}
+div.AboutUs_categories {
+    margin-bottom: 20px;
+}
+div.media {
+    margin-top: 20px;
+}
+.bi-arrow-right-circle-fill {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #7ac948;
+}
+span.aboutUs_seeMore {
+    cursor: pointer;
+    color: blue;
+}
+span.aboutUs_seeMore:hover {
+    text-decoration: underline;
+}

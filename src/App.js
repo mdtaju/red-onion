@@ -1,25 +1,62 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Component/Header/Header';
+import "./App.css"
+import Slider from './Component/Slider/Slider';
+import Categories from './Component/Categories/Categories';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import SignUpForm from './Component/SignUpForm/SignUpForm';
+import FoodDetails from './Component/FoodDetails/FoodDetails';
+import { useState } from 'react';
+import Placeorder from './Component/Placeorder/Placeorder';
+import OrderCompleat from './Component/OrderCompleat/OrderCompleat';
+import { PrivateRoute } from './Component/SignUpForm/Auth';
+import NotFound from './Component/NotFound/NotFound';
+import AboutUs from './Component/AboutUs/AboutUs';
+import Footer from './Component/Footer/Footer';
 
-function App() {
+function App(props) {
+  let totalItem;
+  if (localStorage.getItem('foods')) {
+    const GetFoods = JSON.parse(localStorage.getItem('foods'))
+    totalItem = GetFoods.length;
+  } else {
+    totalItem = 0;
+  }
+  const [CartCount, setCartCount] = useState(totalItem)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header FoodItems={CartCount}/>
+        <Switch>
+          <Route exact path='/' >
+            <Slider />
+            <Categories CartCounter={CartCount} setCartCount={setCartCount}/>
+            <AboutUs />
+            <Footer />
+          </Route>
+          <Route path='/signup'>
+            <SignUpForm/>
+          </Route>
+          <Route path='/food/:keyParameter'>
+            <FoodDetails SetCounter={setCartCount}/>
+          </Route>
+          <PrivateRoute path='/placeorder'>
+            <Placeorder CartCounter={CartCount} SetCounter={setCartCount}/>
+          </PrivateRoute>
+          <PrivateRoute path='/order-compleat'>
+            <OrderCompleat />
+          </PrivateRoute>
+          <Route path='*'>
+            <NotFound />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

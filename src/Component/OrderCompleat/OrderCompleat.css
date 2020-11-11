@@ -1,0 +1,54 @@
+section.orderCompleat_mainSection {
+    margin-top: 100px;
+}
+@media(max-width: 768px) {
+    section.orderCompleat_mainSection {
+        margin-top: 50px;
+    }
+    div.order_compleat_subSection {
+        flex-direction: column !important;
+    }
+    div.orderCompleat_mapImage_container {
+        max-width: 100% !important;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+    div.orderCompleat_detail_main_container {
+        max-width: 50%;
+        margin: 0px auto;
+    }
+}
+@media(max-width: 425px) {
+    div.orderCompleat_detail_main_container {
+        max-width: 100%;
+        margin: 0px auto;
+    }
+}
+img.MapImage_Container {
+    width: 100%;
+}
+div.orderCompleat_detail_mainAria {
+    background: rgb(239 238 236);
+    padding: 20px;
+    border-radius: 10px;
+}
+div.bikeImage_container {
+    width: 100px;
+    margin: 0px auto;
+}
+div.bikeImage_container img {
+    width: 100%;
+}
+div.order_compleat_user_name_container {
+    width: 90%;
+    background: white;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+div.order_compleat_user_image img {
+    width: 70px;
+    margin-right: 10px;
+}

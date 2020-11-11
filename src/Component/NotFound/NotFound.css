@@ -1,0 +1,8 @@
+div.ErrorImage_container {
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+div.ErrorImage_container img {
+    width: 100%;
+}

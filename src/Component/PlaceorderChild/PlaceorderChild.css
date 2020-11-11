@@ -1,0 +1,42 @@
+div.placeOrderChild_main_container {
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+div.placeOrderChild_img_container {
+    padding: 0;
+}
+img.placeOrderChild_img {
+    width: 100%;
+    margin: 0px auto;
+}
+.placeOrderChild_price {
+    color: var(--redColor);
+}
+.btn-danger {
+    background: var(--redColor) !important;
+}
+div.placeOrderChild_quantity {
+    padding: 0px !important;
+}
+div.placeOrderChild_quantity_sub {
+    padding: 10px;
+    background: white;
+    border: 1px solid gray;
+}
+@media(max-width: 425px) {
+    div.placeOrderChild_main_container {
+        text-align: center !important;
+    }
+    img.placeOrderChild_img {
+        width: 80%;
+        margin: 30px 0px;
+    }
+    .placeOrderChild_name {
+        font-size: 1.5rem !important;
+    }
+    div.placeOrderChild_quantity_sub {
+        margin: 20px 0px;
+    }
+}

@@ -1,0 +1,38 @@
+footer.footer_main_section {
+    background: #191919;
+    margin-top: 50px;
+}
+div.footer_elements {
+    margin-top: 50px;
+}
+@media(max-width: 425px) {
+    div.footer_elements {
+        text-align: center;
+    }
+}
+div.footer_logo_container img {
+    width: 150px;
+    cursor: pointer;
+}
+p.footer_option {
+    color: white;
+    font-weight: 300;
+}
+p.footer_option:hover {
+    color: var(--redColor);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer_icon {
+    color: white;
+}
+.footer_icon:hover {
+    color: var(--redColor);
+    cursor: pointer;
+}
+.footer_copyright {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: gray;
+}

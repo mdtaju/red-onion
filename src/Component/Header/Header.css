@@ -1,0 +1,33 @@
+.navbar-brand img{
+    width: 150px;
+}
+.nav-item {
+    margin: 0px 20px;
+}
+.nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    background: none;
+}
+.nav_item_hide {
+    display: none !important;
+}
+.nav-link svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    transform: translateX(5px);
+}
+sup.cart_counter {
+    background: var(--redColor);
+}
+@media(max-width: 768px){
+    .nav_item_block {
+        display: none !important;
+    }
+    .nav_item_hide {
+        display: block !important;
+    }
+}
