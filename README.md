@@ -1,4 +1,4 @@
-![](https://red-onion-taj.web.app/static/media/logo.888f17aa.png)
+![](https://red-onion-taj.web.app/favicon.ico)
 ## Available Scripts
 
 In the project directory, you can run:
